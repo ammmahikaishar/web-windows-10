@@ -1,0 +1,27 @@
+.scroll {
+  &Y {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0.25rem;
+      background-color: #00000080;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #00000020;
+
+      &:hover {
+        background-color: #00000080;
+      }
+    }
+
+    &Hidden {
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+  }
+
+
+}
